@@ -11,6 +11,7 @@
     <link rel="icon" type="image/png" href="images/favicon.png">
 </head>
 <body>
+<header>
 <h1>Birhanu Liku</h1>
 <img src="images/profile.jpg"
      alt="Portrait of Birhanu Liku"
@@ -18,16 +19,18 @@
      width="200"
      height="200">
 <p>Software Engineering student and aspiring web developer.</p>
-<p>
+<nav>
     <a href="#about">About</a> |
     <a href="#skills">Skills</a> |
     <a href="#projects">Projects</a> |
     <a href="#education">Education</a> |
     <a href="#contact">Contact</a> |
     <a href="projects.html">All Projects</a>
-</p>
+</nav>
+</header>
 <hr>
-
+<main>
+<section id="about">
 <h2 id="about">About Me</h2>
 
 <p>
@@ -48,13 +51,13 @@
     Fun fact: I drink 2 litres of H<sub>2</sub>O while coding every day.
 </p>
 <hr>
-
+<aside>
 <h2>What Inspires Me</h2>
 
 <blockquote>
     “The best way to predict the future is to invent it.” — Alan Kay
 </blockquote>
-
+</aside>
 <p>
     My teacher always says
     <q>practice beats theory</q>,
@@ -65,8 +68,9 @@
     Book I am reading:
     <cite>Clean Code</cite> by Robert C. Martin
 </p>
-    
+</section>  
 <hr>
+<section id="skills">
 <h2 id="skills">Skills</h2>
 
 <ul>
@@ -114,10 +118,13 @@
     <dt>Git and GitHub</dt>
     <dd>Saves versions of my code and shares my projects online.</dd>
 </dl>
+</section>
+    
 <hr>
 
+<section id="projects">
 <h2 id="projects">Projects</h2>
-
+<article>
 <h3>Simple Calculator</h3>
 <img src="images/calculator.jpg"
      alt="Screenshot of my Simple Calculator project"
@@ -127,7 +134,9 @@
 <p>
     A calculator that adds, subtracts, multiplies and divides.
 </p>
+</article>
 
+<article>
 <h3>Library Management System</h3>
 
 <img src="images/Screenshot_20261029_192454_Pydroid 3.jpg"
@@ -138,6 +147,9 @@
 <p>
     A console program for borrowing and returning books.
 </p>
+</article>
+
+<article>
 <h3>My First Program</h3>
 
 <p>
@@ -149,8 +161,12 @@
 <pre><code>for i in range(3):
     print("Hello", i)
 </code></pre>
+</article>   
+</section>
+    
 <hr>
 
+<section id="education">
 <h2 id="education">Education</h2>
 
 <h3>BSc in Software Engineering</h3>
@@ -220,8 +236,11 @@
         </tr>
     </tfoot>
 </table>
+</section>
+    
 <hr>
 
+<section id="contacts">
 <h2 id="contact">Contact</h2>
 
 <p>
@@ -290,5 +309,10 @@
           href="mailto:birish.liku@gmail.com"
           alt="Email">
 </map>
+</section>
+</main>
+<footer>
+    <p>&copy; 2026 Birhanu Liku. All rights reserved.</p>
+</footer>
 </body>
 </html>
