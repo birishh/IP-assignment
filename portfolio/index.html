@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <meta name="description" content="Portfolio of Birhanu Liku, Software Engineering student and aspiring web developer in Addis Ababa.">
-    <meta name="keywords" content="Birhanu Liku, portfolio, software engineering, web development, HTML">
+    <meta name="keywords" content="Birhanu Liku, portfolio, software engineering, web development, HTML, CSS, JavaScript, Python, C++">
     <meta name="author" content="Birhanu Liku">
 
     <title>Birhanu Liku | Portfolio</title>
@@ -16,29 +16,38 @@
 
 <body>
 
-    <!-- HEADER -->
     <header>
+
+        <!-- Lab 14: Personal logo -->
+        <canvas id="logo" width="120" height="120">
+            Birhanu Liku logo
+        </canvas>
+
         <h1>Birhanu Liku</h1>
 
-        <img src="images/profile.jpg"
-             alt="Portrait of Birhanu Liku"
-             title="Birhanu Liku"
-             width="200"
-             height="200">
+        <img
+            src="images/profile.jpg"
+            alt="Portrait of Birhanu Liku"
+            title="Birhanu Liku"
+            width="200"
+            height="200"
+        >
 
         <p>Software Engineering student and aspiring web developer.</p>
 
-        <!-- LAB 12: HIRE ME DIALOG -->
-        <button type="button"
-                onclick="document.getElementById('hireDialog').showModal()">
+        <!-- Lab 12: Hire me dialog -->
+        <button
+            type="button"
+            onclick="document.getElementById('hireDialog').showModal()"
+        >
             Hire me
         </button>
 
         <dialog id="hireDialog">
-            <h2>Available for internships</h2>
+            <h2>Available for opportunities</h2>
 
             <p>
-                I am available for internships and freelance web projects.
+                I am interested in internships and freelance web projects.
             </p>
 
             <p>
@@ -47,13 +56,14 @@
                 <a href="files/cv.pdf" download>download my CV</a>.
             </p>
 
-            <button type="button"
-                    onclick="document.getElementById('hireDialog').close()">
+            <button
+                type="button"
+                onclick="document.getElementById('hireDialog').close()"
+            >
                 Close
             </button>
         </dialog>
 
-        <!-- NAVIGATION -->
         <nav>
             <a href="#about">About</a> |
             <a href="#skills">Skills</a> |
@@ -62,45 +72,47 @@
             <a href="#contact">Contact</a> |
             <a href="projects.html">All Projects</a>
         </nav>
+
     </header>
 
 
-    <!-- MAIN CONTENT -->
     <main>
 
         <!-- ABOUT SECTION -->
         <section id="about">
+
             <h2>About Me</h2>
 
             <p>
-                I am a 3<sup>rd</sup> year
-                <strong>Software Engineering</strong> student.
-                I <em>really</em> enjoy building websites, and my current goal is to
-                <mark>become a full-stack web developer</mark>.
+                My name is Birhanu Liku. I am a third-year
+                Software Engineering student at
+                <abbr title="Addis Ababa Science and Technology University">
+                    AASTU
+                </abbr>.
             </p>
 
             <p>
-                Languages I have used:
-                <b>Python</b>,
-                <b>C++</b> and
-                <i>a little</i> JavaScript.
+                I am interested in web development, experimenting
+                with new technologies, and solving problems using code.
             </p>
 
             <p>
-                Fun fact: I drink 2 litres of H<sub>2</sub>O while coding every day.
-            </p>
-
-            <!-- LAB 13: HTML ENTITIES -->
-            <p>
-                My favourite tag is &lt;main&gt;, because it tells the browser
-                where the important content is &amp; helps screen readers.
+                I enjoy learning programming languages such as
+                Python, C++, and JavaScript.
             </p>
 
             <p>
-                The symbols &lt; and &gt; are used to write HTML tags.
+                One interesting fact about me is that I enjoy
+                exploring how things work and finding ways to build
+                useful things with technology.
             </p>
 
-            <!-- LAB 11: AUDIO INTRODUCTION -->
+            <p>
+                My favourite tag is &lt;main&gt;, because it tells
+                the browser where the important content is
+                &amp; helps screen readers.
+            </p>
+
             <h3>Hear my introduction</h3>
 
             <audio controls>
@@ -111,33 +123,31 @@
         </section>
 
 
-        <!-- ASIDE: INSPIRATION -->
+        <!-- INSPIRATION ASIDE -->
         <aside>
+
             <h2>What Inspires Me</h2>
 
             <blockquote>
-                “The best way to predict the future is to invent it.” — Alan Kay
+                "The best way to predict the future is to invent it."
             </blockquote>
 
             <p>
-                My teacher always says
-                <q>practice beats theory</q>,
-                so I code every day.
+                <cite>Alan Kay</cite>
             </p>
 
             <p>
-                Book I am reading:
-                <cite>Clean Code</cite> by Robert C. Martin
+                I believe that learning is most effective when
+                ideas are transformed into practical projects.
             </p>
 
-            <!-- LAB 11: YOUTUBE EMBED -->
             <h3>A talk I recommend</h3>
 
             <iframe
                 src="https://www.youtube.com/embed/_uQrJ0TkZlc"
                 width="560"
                 height="315"
-                title="YouTube video: Python Tutorial"
+                title="Python programming tutorial by Mosh"
                 allowfullscreen>
             </iframe>
 
@@ -146,180 +156,202 @@
 
         <!-- SKILLS SECTION -->
         <section id="skills">
+
             <h2>Skills</h2>
 
+            <h3>Programming Languages</h3>
+
             <ul>
-                <li>Programming Languages
-                    <ul type="square">
+                <li>Web Development
+                    <ul>
+                        <li>
+                            <abbr title="HyperText Markup Language">HTML</abbr>
+                        </li>
+                        <li>CSS</li>
+                        <li>JavaScript</li>
+                    </ul>
+                </li>
+
+                <li>General Programming
+                    <ul>
                         <li>Python</li>
                         <li>C++</li>
-                        <li>Java</li>
-                    </ul>
-                </li>
-
-                <li>Web Development
-                    <ul type="circle">
-                        <li><abbr title="HyperText Markup Language">HTML</abbr></li>
-                        <li>CSS (learning)</li>
-                        <li>JavaScript (next)</li>
-                    </ul>
-                </li>
-
-                <li>Soft Skills
-                    <ul>
-                        <li>Teamwork</li>
-                        <li>Presenting</li>
                     </ul>
                 </li>
             </ul>
 
 
-            <h3>My Learning Roadmap</h3>
+            <h3>Learning Roadmap</h3>
 
-            <ol type="1">
-                <li>HTML structure and content</li>
-                <li>CSS layout and design</li>
-                <li>JavaScript and the DOM</li>
-                <li>PHP and databases</li>
-                <li>Deploy my portfolio online</li>
+            <ol>
+                <li>Strengthen programming fundamentals.</li>
+                <li>Practice data structures and algorithms.</li>
+                <li>Improve web development skills.</li>
+                <li>Build practical software projects.</li>
             </ol>
 
 
             <h3>Tools I Use</h3>
 
             <dl>
-                <dt>VS Code</dt>
-                <dd>The code editor I use for every lab.</dd>
+                <dt>Visual Studio Code</dt>
+                <dd>A code editor for writing and managing programs.</dd>
 
-                <dt>Chrome DevTools</dt>
-                <dd>Inspects HTML and helps me find mistakes.</dd>
+                <dt>Git</dt>
+                <dd>A version control system for tracking code changes.</dd>
 
-                <dt>Git and GitHub</dt>
-                <dd>Saves versions of my code and shares my projects online.</dd>
+                <dt>GitHub</dt>
+                <dd>A platform for hosting and sharing code repositories.</dd>
+
+                <dt>Python</dt>
+                <dd>A programming language used for general-purpose programming and automation.</dd>
             </dl>
 
 
-            <!-- LAB 12: SKILL LEVELS -->
+            <!-- Lab 12: Skill meters -->
             <h3>Skill Levels</h3>
 
             <p>
                 <label for="lvl-html">HTML</label>
-                <meter id="lvl-html"
-                       value="0.8"
-                       min="0"
-                       max="1">80%</meter>
+                <meter id="lvl-html" value="0.8" min="0" max="1">
+                    80%
+                </meter>
             </p>
 
             <p>
                 <label for="lvl-python">Python</label>
-                <meter id="lvl-python"
-                       value="0.7"
-                       min="0"
-                       max="1">70%</meter>
+                <meter id="lvl-python" value="0.7" min="0" max="1">
+                    70%
+                </meter>
             </p>
 
             <p>
                 <label for="lvl-js">JavaScript</label>
-                <meter id="lvl-js"
-                       value="0.2"
-                       min="0"
-                       max="1"
-                       low="0.3"
-                       high="0.7"
-                       optimum="1">20%</meter>
+                <meter
+                    id="lvl-js"
+                    value="0.2"
+                    min="0"
+                    max="1"
+                    low="0.3"
+                    high="0.7"
+                    optimum="1">
+                    20%
+                </meter>
             </p>
 
-            <!-- LAB 12: FOURTH SKILL METER -->
             <p>
                 <label for="lvl-cpp">C++</label>
-                <meter id="lvl-cpp"
-                       value="0.6"
-                       min="0"
-                       max="1">60%</meter>
+                <meter id="lvl-cpp" value="0.6" min="0" max="1">
+                    60%
+                </meter>
             </p>
+
+
+            <!-- Lab 14: Skill chart canvas -->
+            <h3>My Skills Chart</h3>
+
+            <canvas id="skillChart" width="300" height="150">
+                A bar chart showing my programming skill levels.
+            </canvas>
 
         </section>
 
 
         <!-- PROJECTS SECTION -->
         <section id="projects">
+
             <h2>Projects</h2>
 
             <article>
+
                 <h3>Simple Calculator</h3>
 
-                <img src="images/calculator.jpg"
-                     alt="Screenshot of my Simple Calculator project"
-                     width="400"
-                     height="250">
+                <img
+                    src="images/calculator.jpg"
+                    alt="Screenshot of my Python calculator"
+                    width="400"
+                >
 
                 <p>
-                    A calculator that adds, subtracts, multiplies and divides.
+                    A simple calculator built with Python.
+                    It demonstrates basic programming concepts
+                    and arithmetic operations.
                 </p>
+
             </article>
 
 
             <article>
+
                 <h3>Library Management System</h3>
 
-                <img src="images/Screenshot_20261029_192454_Pydroid 3.jpg"
-                     alt="Screenshot of my Library Management System project"
-                     width="400"
-                     height="250">
+                <img
+                    src="images/Screenshot_20261029_192454_Pydroid 3.jpg"
+                    alt="Screenshot of my Library Management System"
+                    width="400"
+                >
 
                 <p>
-                    A console program for borrowing and returning books.
+                    A project that demonstrates how a library
+                    management system can organize book-related
+                    information and operations.
                 </p>
+
             </article>
 
 
             <article>
+
                 <h3>My First Program</h3>
 
                 <p>
-                    The first thing I wrote in Python was
-                    <code>print("Hello, World!")</code>.
-                    Later I wrote this loop:
+                    One of my early programming exercises.
+                    It helped me understand the basic structure
+                    of a computer program.
                 </p>
 
-                <pre><code>for i in range(3):
-    print("Hello", i)
-</code></pre>
+                <pre><code>
+print("Hello, World!")
+                </code></pre>
+
             </article>
 
             <p>
-                <a href="projects.html">See all my projects →</a>
+                <a href="projects.html">See all my projects</a>
             </p>
+
         </section>
 
 
         <!-- EDUCATION SECTION -->
         <section id="education">
+
             <h2>Education</h2>
 
-            <h3>BSc in Software Engineering</h3>
-
             <p>
-                <abbr title="Addis Ababa Science and Technology University">AASTU</abbr>,
+                Addis Ababa Science and Technology University,
                 <time datetime="2023-09">September 2023</time> – present
             </p>
 
-            <!-- LAB 12: DEGREE PROGRESS -->
+            <p>
+                Course: Software Engineering
+            </p>
+
+            <!-- Lab 12: Degree progress -->
             <p>
                 <label for="degree">Degree progress:</label>
 
-                <progress id="degree"
-                          value="40"
-                          max="100">40%</progress>
+                <progress id="degree" value="40" max="100">
+                    40%
+                </progress>
 
                 40%
             </p>
 
-            <table border="1" cellpadding="8" cellspacing="0">
 
-                <caption>
-                    Academic Record — BSc in Software Engineering
-                </caption>
+            <h3>Academic Record</h3>
+
+            <table border="1">
 
                 <thead>
                     <tr>
@@ -332,69 +364,77 @@
                 </thead>
 
                 <tbody>
+
                     <tr>
-                        <th rowspan="4">Year 1</th>
-                        <td rowspan="2">Semester I</td>
+                        <td>1</td>
+                        <td>1</td>
                         <td>General Mathematics</td>
                         <td>3</td>
                         <td>A+</td>
                     </tr>
 
                     <tr>
+                        <td>1</td>
+                        <td>1</td>
                         <td>Psychology</td>
                         <td>3</td>
                         <td>A-</td>
                     </tr>
 
                     <tr>
-                        <td rowspan="2">Semester II</td>
+                        <td>1</td>
+                        <td>2</td>
                         <td>Applied Mathematics I</td>
                         <td>4</td>
                         <td>A+</td>
                     </tr>
 
                     <tr>
+                        <td>1</td>
+                        <td>2</td>
                         <td>Physics</td>
-                        <td></td>
+                        <td>—</td>
                         <td>A-</td>
                     </tr>
 
                     <tr>
-                        <th rowspan="2">Year 2</th>
-                        <td>Semester I</td>
+                        <td>2</td>
+                        <td>1</td>
                         <td>Discrete Mathematics</td>
                         <td>3</td>
                         <td>B+</td>
                     </tr>
 
                     <tr>
-                        <td>Semester II</td>
+                        <td>2</td>
+                        <td>2</td>
                         <td>Database</td>
                         <td>4</td>
                         <td>B+</td>
                     </tr>
+
                 </tbody>
 
                 <tfoot>
                     <tr>
                         <th colspan="3">Total credit hours</th>
-                        <th>17</th>
-                        <th></th>
+                        <td>17</td>
+                        <td>—</td>
                     </tr>
                 </tfoot>
 
             </table>
+
         </section>
 
 
         <!-- CONTACT SECTION -->
         <section id="contact">
-            <h2>Contact</h2>
+
+            <h2>Contact Me</h2>
 
             <p>
-                Address:<br>
-                Addis Ababa,<br>
-                Ethiopia
+                Location: Addis Ababa, Ethiopia
             </p>
 
             <p>
@@ -413,141 +453,199 @@
 
             <p>
                 GitHub:
-                <a href="https://github.com/birishh/IP-assignment">
-                    github.com/birishh/IP-assignment
+                <a href="https://github.com/birishh" target="_blank">
+                    Visit my GitHub profile
                 </a>
             </p>
 
             <p>
-                LinkedIn:
-                <a href="https://www.linkedin.com/in/birhanu-liku-503010448">
-                    linkedin.com/in/birhanu-liku-503010448
-                </a>
-            </p>
-
-            <p>
+                CV:
                 <a href="files/cv.pdf" download>
-                    Download my <abbr title="Curriculum Vitae">CV</abbr> (PDF)
+                    Download my <abbr title="Curriculum Vitae">CV</abbr>
                 </a>
             </p>
 
 
-            <!-- CONNECT BANNER -->
-            <h3>Connect with me</h3>
+            <h3>Connect with Me</h3>
 
-            <img src="images/connect-banner.png"
-                 usemap="#connectmap"
-                 alt="Connect banner: GitHub, LinkedIn, Email"
-                 width="600"
-                 height="200">
-
-            <map name="connectmap">
-                <area shape="rect"
-                      coords="20,40,180,160"
-                      href="https://github.com/birishh/portfolio"
-                      alt="GitHub">
-
-                <area shape="circle"
-                      coords="300,100,70"
-                      href="https://www.linkedin.com/"
-                      alt="LinkedIn">
-
-                <area shape="rect"
-                      coords="420,40,580,160"
-                      href="mailto:birish.liku@gmail.com"
-                      alt="Email">
-            </map>
+            <img
+                src="images/connect-banner.png"
+                alt="Connect with me through my online platforms"
+                width="500"
+            />
 
 
-            <!-- LAB 11: GOOGLE MAP -->
-            <h3>Where I study</h3>
+            <!-- Lab 11: University map -->
+            <h3>Where I Study</h3>
 
             <iframe
-                src="https://www.google.com/maps?q=VRP5%2B3W6%20Addis%20Ababa%20Science%20and%20Technology%20University%2C%20Addis%20Ababa&output=embed"
+                src="https://www.google.com/maps?q=Addis+Ababa+Science+and+Technology+University&output=embed"
                 width="600"
                 height="300"
                 title="Map of Addis Ababa Science and Technology University">
             </iframe>
 
 
-            <!-- CONTACT FORM -->
+            <!-- Lab 9 and Lab 10: Contact form -->
             <h3>Send me a message</h3>
 
-            <form action="thank-you.html" method="post"
-                  enctype="multipart/form-data">
+            <form
+                action="thank-you.html"
+                method="post"
+                enctype="multipart/form-data">
 
+                <!-- Fieldset 1 -->
                 <fieldset>
+
                     <legend>Your Details</legend>
 
                     <label for="fullname">Full name:</label>
-                    <input type="text" id="fullname" name="fullname" required>
+
+                    <input
+                        type="text"
+                        id="fullname"
+                        name="fullname"
+                        required
+                    >
+
                     <br><br>
 
                     <label for="email">Email:</label>
-                    <input type="email" id="email" name="email" required>
+
+                    <input
+                        type="email"
+                        id="email"
+                        name="email"
+                        required
+                    >
 
                 </fieldset>
 
 
+                <!-- Fieldset 2 -->
                 <fieldset>
+
                     <legend>Project Details</legend>
 
                     <label for="phone">Phone (optional):</label>
-                    <input type="text" id="phone" name="phone"
-                           pattern="0[79][0-9]{8}"
-                           title="10 digits starting with 09 or 07">
+
+                    <input
+                        type="text"
+                        id="phone"
+                        name="phone"
+                        pattern="0[79][0-9]{8}"
+                        title="10 digits starting with 09 or 07"
+                    >
+
                     <br><br>
 
                     <p>Preferred contact method:</p>
 
-                    <input type="radio" id="by-email" name="contact-method"
-                           value="email" checked>
+                    <input
+                        type="radio"
+                        id="by-email"
+                        name="contact-method"
+                        value="email"
+                        checked
+                    >
+
                     <label for="by-email">Email</label>
 
-                    <input type="radio" id="by-phone" name="contact-method"
-                           value="phone">
+                    <input
+                        type="radio"
+                        id="by-phone"
+                        name="contact-method"
+                        value="phone"
+                    >
+
                     <label for="by-phone">Phone</label>
+
                     <br><br>
 
                     <label for="meeting">Preferred meeting date:</label>
-                    <input type="date" id="meeting" name="meeting"
-                           min="2026-11-01">
+
+                    <input
+                        type="date"
+                        id="meeting"
+                        name="meeting"
+                        min="2026-11-01"
+                    >
+
                     <br><br>
 
                     <label for="weeks">Project length (weeks):</label>
-                    <input type="number" id="weeks" name="weeks"
-                           min="1" max="52" step="1">
+
+                    <input
+                        type="number"
+                        id="weeks"
+                        name="weeks"
+                        min="1"
+                        max="52"
+                        step="1"
+                    >
+
+                    <br><br>
+
+                    <label for="budget">Your budget (ETB):</label>
+
+                    <input
+                        type="number"
+                        id="budget"
+                        name="budget"
+                        min="1000"
+                        step="500"
+                    >
+
                     <br><br>
 
                     <label for="brief">Attach a project brief:</label>
-                    <input type="file" id="brief" name="brief">
+
+                    <input
+                        type="file"
+                        id="brief"
+                        name="brief"
+                    >
+
                     <br><br>
 
                     <label for="colour">Preferred website colour:</label>
-                    <input type="color" id="colour" name="colour"
-                           value="#1f5fa8">
+
+                    <input
+                        type="color"
+                        id="colour"
+                        name="colour"
+                        value="#1f5fa8"
+                    >
+
                     <br><br>
 
                     <label for="rating">
                         How much do you like my portfolio? (1–10)
                     </label>
-                    <input type="range" id="rating" name="rating"
-                           min="1" max="10" value="7">
-                    <br><br>
 
-                    <label for="budget">Your budget (ETB):</label>
-                    <input type="number" id="budget" name="budget"
-                           min="1000" step="500">
+                    <input
+                        type="range"
+                        id="rating"
+                        name="rating"
+                        min="1"
+                        max="10"
+                        value="7"
+                    >
 
                 </fieldset>
 
 
+                <!-- Fieldset 3 -->
                 <fieldset>
+
                     <legend>Your Message</legend>
 
-                    <label for="reason">Reason for contacting me:</label>
+                    <label for="reason">
+                        Reason for contacting me:
+                    </label>
 
                     <select id="reason" name="reason" required>
+
                         <optgroup label="Work">
                             <option value="internship">Internship offer</option>
                             <option value="freelance">Freelance project</option>
@@ -560,25 +658,41 @@
                         </optgroup>
 
                         <option value="other">Other</option>
+
                     </select>
 
                     <br><br>
 
                     <label for="message">Message:</label>
+
                     <br>
 
-                    <textarea id="message" name="message"
-                              rows="6" cols="40" required></textarea>
+                    <textarea
+                        id="message"
+                        name="message"
+                        rows="6"
+                        cols="40"
+                        required>
+                    </textarea>
 
-                    <br><br>
+                    <br>
 
-                    <input type="checkbox" id="copy" name="copy" value="yes">
-                    <label for="copy">Send me a copy of this message</label>
+                    <input
+                        type="checkbox"
+                        id="copy"
+                        name="copy"
+                        value="yes"
+                    >
+
+                    <label for="copy">
+                        Send me a copy of this message
+                    </label>
 
                 </fieldset>
 
 
                 <button type="submit">Send Message</button>
+
                 <button type="reset">Clear</button>
 
             </form>
@@ -588,15 +702,49 @@
     </main>
 
 
-    <!-- FOOTER -->
     <footer>
-        <p>&copy; 2026 Birhanu Liku. All rights reserved.</p>
+
+        <p>
+            &copy; 2026 Birhanu Liku. All rights reserved.
+        </p>
 
         <p>
             Last updated:
             <time datetime="2026-11-04">4 November 2026</time>
         </p>
+
     </footer>
 
-</body>
-</html>
+
+    <!-- Lab 14: Draw the logo and skill chart -->
+    <script>
+
+        // Personal logo
+        const canvas = document.getElementById('logo');
+        const ctx = canvas.getContext('2d');
+
+        // Blue square background
+        ctx.fillStyle = "#1f5fa8";
+        ctx.fillRect(0, 0, 120, 120);
+
+        // White circle
+        ctx.beginPath();
+        ctx.arc(60, 60, 45, 0, 2 * Math.PI);
+        ctx.fillStyle = "white";
+        ctx.fill();
+
+        // Initials
+        ctx.fillStyle = "#1f5fa8";
+        ctx.font = "bold 36px Arial";
+        ctx.textAlign = "center";
+        ctx.textBaseline = "middle";
+        ctx.fillText("BL", 60, 62);
+
+
+        // Skill chart
+        const chart = document.getElementById('skillChart');
+        const chartCtx = chart.getContext('2d');
+
+        const skills = [
+            { name: "HTML", value: 0.8 },
+            { name: "Pyt
