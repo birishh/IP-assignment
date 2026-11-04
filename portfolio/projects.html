@@ -5,8 +5,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <meta name="description" content="Projects built by Birhanu Liku, including a Simple Calculator written in Python.">
-    <meta name="keywords" content="Birhanu Liku, projects, Python, calculator, programming">
+    <meta name="description" content="Projects developed by Birhanu Liku, a Software Engineering student.">
+    <meta name="keywords" content="Birhanu Liku, projects, Python, calculator, library management system, programming">
     <meta name="author" content="Birhanu Liku">
 
     <title>Projects | Birhanu Liku</title>
@@ -16,9 +16,13 @@
 
 <body>
 
-    <!-- HEADER -->
     <header>
+
         <h1>My Projects</h1>
+
+        <p>
+            A collection of programming projects and practical exercises.
+        </p>
 
         <nav>
             <a href="index.html">Home</a> |
@@ -26,85 +30,202 @@
             <a href="index.html#skills">Skills</a> |
             <a href="index.html#contact">Contact</a>
         </nav>
+
     </header>
 
 
-    <!-- MAIN CONTENT -->
     <main>
 
-        <section id="projects">
-            <h2>Projects I Have Built</h2>
+        <section id="all-projects">
 
-            <p>
-                Here are some of the programming projects I have worked on.
-            </p>
+            <h2>Project Portfolio</h2>
 
 
-            <!-- SIMPLE CALCULATOR -->
-            <article>
+            <!-- Project 1 -->
+            <article id="calculator">
+
                 <h3>Simple Calculator</h3>
 
-                <img src="images/calculator.jpg"
-                     alt="Screenshot of my Simple Calculator project"
-                     width="400"
-                     height="250">
+                <img
+                    src="images/calculator.jpg"
+                    alt="Screenshot of my Python calculator"
+                    width="400"
+                >
 
                 <p>
-                    A calculator that adds, subtracts, multiplies and divides.
-                    It was written in Python.
+                    A simple calculator developed using Python.
+                    The project demonstrates basic programming
+                    concepts and arithmetic operations.
                 </p>
 
-                <!-- LAB 11: PROJECT DEMO VIDEO -->
                 <h3>Watch the demo</h3>
 
-                <video controls
-                       poster="images/project-demo-poster.jpg"
-                       width="640"
-                       height="360">
+                <video
+                    controls
+                    poster="images/calculator.jpg"
+                    width="640"
+                    height="360">
 
-                    <source src="media/project-demo.mp4" type="video/mp4">
+                    <source
+                        src="media/project-demo.mp4"
+                        type="video/mp4"
+                    >
 
-                    <source src="media/project-demo.webm" type="video/webm">
+                    <source
+                        src="media/project-demo.webm"
+                        type="video/webm"
+                    >
 
-                    <track src="media/project-demo.vtt"
-                           kind="captions"
-                           srclang="en"
-                           label="English"
-                           default>
+                    <track
+                        src="media/project-demo.vtt"
+                        kind="captions"
+                        srclang="en"
+                        label="English"
+                        default
+                    >
 
                     Your browser does not support the video tag.
 
                 </video>
 
 
-                <!-- LAB 12: COLLAPSIBLE PROJECT DETAILS -->
+                <!-- Lab 12: Collapsible project details -->
                 <details>
+
                     <summary>How I built it</summary>
 
                     <ol>
-                        <li>Wrote down the four operations the program must support.</li>
-                        <li>Read two numbers and an operator from the user.</li>
-                        <li>Used if/elif to pick the operation.</li>
-                        <li>Handled division by zero with an error message.</li>
+                        <li>
+                            Wrote down the operations the program needed to support.
+                        </li>
+
+                        <li>
+                            Read numbers and an operator from the user.
+                        </li>
+
+                        <li>
+                            Used conditional statements to select the operation.
+                        </li>
+
+                        <li>
+                            Displayed the calculated result.
+                        </li>
                     </ol>
+
+                </details>
+
+            </article>
+
+
+            <!-- Project 2 -->
+            <article id="library">
+
+                <h3>Library Management System</h3>
+
+                <img
+                    src="images/Screenshot_20261029_192454_Pydroid 3.jpg"
+                    alt="Screenshot of my Library Management System"
+                    width="400"
+                >
+
+                <p>
+                    A project designed to demonstrate how a library
+                    management system can organize book information
+                    and related operations.
+                </p>
+
+                <details>
+
+                    <summary>Project details</summary>
+
+                    <p>
+                        This project helped me practice programming
+                        logic and organizing information in a program.
+                    </p>
+
+                </details>
+
+            </article>
+
+
+            <!-- Project 3 -->
+            <article id="first-program">
+
+                <h3>My First Program</h3>
+
+                <p>
+                    One of my early programming exercises.
+                    It helped me understand the basic structure
+                    of a computer program.
+                </p>
+
+                <pre><code>
+print("Hello, World!")
+                </code></pre>
+
+                <details>
+
+                    <summary>What I learned</summary>
+
+                    <ul>
+                        <li>Basic program structure.</li>
+                        <li>Displaying output.</li>
+                        <li>Writing and running code.</li>
+                    </ul>
+
                 </details>
 
             </article>
 
         </section>
 
+
+        <aside>
+
+            <h2>About My Work</h2>
+
+            <p>
+                I enjoy building practical projects because they
+                help me turn programming concepts into working
+                applications.
+            </p>
+
+            <p>
+                I am continuously learning and improving my
+                programming skills.
+            </p>
+
+        </aside>
+
+
+        <section id="back-to-home">
+
+            <h2>Explore More</h2>
+
+            <p>
+                Visit my main portfolio to learn more about my
+                education, skills, and background.
+            </p>
+
+            <a href="index.html">Back to Home</a>
+
+        </section>
+
     </main>
 
 
-    <!-- FOOTER -->
     <footer>
-        <p>&copy; 2026 Birhanu Liku. All rights reserved.</p>
 
         <p>
-            Last updated:
-            <time datetime="2026-11-04">4 November 2026</time>
+            &copy; 2026 Birhanu Liku. All rights reserved.
         </p>
+
+        <p>
+            <a href="index.html">Return to my portfolio</a>
+        </p>
+
     </footer>
 
 </body>
+
 </html>
