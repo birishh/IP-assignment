@@ -1,18 +1,92 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta name="description" content="Projects built by Birhanu Liku, including a Simple Calculator written in Python.">
+    <meta name="keywords" content="Birhanu Liku, projects, Python, calculator, programming">
+    <meta name="author" content="Birhanu Liku">
+
     <title>Projects | Birhanu Liku</title>
+
     <link rel="icon" type="image/png" href="images/favicon.png">
 </head>
+
 <body>
-    <p><a href="index.html">← Back to Home</a></p>
 
-    <h1>My Projects</h1>
+    <!-- HEADER -->
+    <header>
+        <h1>My Projects</h1>
 
-    <p>
-        Details of every project I have built.
-        The summary table comes in Lab 7.
-    </p>
+        <nav>
+            <a href="index.html">Home</a> |
+            <a href="index.html#about">About</a> |
+            <a href="index.html#skills">Skills</a> |
+            <a href="index.html#contact">Contact</a>
+        </nav>
+    </header>
+
+
+    <!-- MAIN CONTENT -->
+    <main>
+
+        <section id="projects">
+            <h2>Projects I Have Built</h2>
+
+            <p>
+                Here are some of the programming projects I have worked on.
+            </p>
+
+
+            <!-- SIMPLE CALCULATOR -->
+            <article>
+                <h3>Simple Calculator</h3>
+
+                <img src="images/calculator.jpg"
+                     alt="Screenshot of my Simple Calculator project"
+                     width="400"
+                     height="250">
+
+                <p>
+                    A calculator that adds, subtracts, multiplies and divides.
+                    It was written in Python.
+                </p>
+
+                <!-- LAB 11: PROJECT DEMO VIDEO -->
+                <h3>Watch the demo</h3>
+
+                <video controls
+                       poster="images/project-demo-poster.jpg"
+                       width="640"
+                       height="360">
+
+                    <source src="media/project-demo.mp4" type="video/mp4">
+
+                    <source src="media/project-demo.webm" type="video/webm">
+
+                    <track src="media/project-demo.vtt"
+                           kind="captions"
+                           srclang="en"
+                           label="English"
+                           default>
+
+                    Your browser does not support the video tag.
+
+                </video>
+
+            </article>
+
+        </section>
+
+    </main>
+
+
+    <!-- FOOTER -->
+    <footer>
+        <p>&copy; 2026 Birhanu Liku. All rights reserved.</p>
+    </footer>
+
 </body>
 </html>
