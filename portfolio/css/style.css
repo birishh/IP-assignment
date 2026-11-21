@@ -400,3 +400,98 @@ caption {
 ul ul {
     list-style-type: square;
 }
+
+
+/*  LAB 20 — Backgrounds, gradients and opacity */
+
+
+/* ---------- Header: dotted blue gradient ---------- */
+
+header {
+    background-image:
+        radial-gradient(rgba(255, 255, 255, 0.16) 1px, transparent 1px),
+        linear-gradient(135deg, #1f5fa8, #0b2d55);
+
+    background-size: 18px 18px, cover;
+    color: white;
+}
+
+/* ---------- Header text and navigation ---------- */
+
+header h1 {
+    color: white;
+}
+
+header .tagline {
+    color: rgba(255, 255, 255, 0.85);
+}
+
+header nav a:link,
+header nav a:visited {
+    color: white;
+    border-color: rgba(255, 255, 255, 0.6);
+}
+
+header nav a:hover {
+    background-color: rgba(255, 255, 255, 0.15);
+}
+
+/* ---------- Header button ---------- */
+
+header .btn {
+    background-image: none;
+    background-color: hsl(37, 91%, 55%);
+    color: #22313f;
+}
+
+/* ---------- Contact background ---------- */
+
+#contact {
+    background-image:
+        linear-gradient(
+            rgba(255, 255, 255, 0.88),
+            rgba(255, 255, 255, 0.88)
+        ),
+        url("../images/contact-bg.jpg");
+
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+/* ---------- Quote radial glow ---------- */
+
+aside {
+    background-image:
+        radial-gradient(circle at top left, #fff3dc, white 70%);
+}
+
+/* ---------- Footer ---------- */
+
+footer {
+    background-color: #22313f;
+    color: rgba(255, 255, 255, 0.8);
+}
+
+/* ---------- Dialog backdrop ---------- */
+
+dialog::backdrop {
+    background-color: rgba(11, 45, 85, 0.6);
+}
+
+/* ---------- Project image opacity ---------- */
+
+.card img {
+    opacity: 0.85;
+}
+
+.card:hover img {
+    opacity: 1;
+}
+
+/* ---------- Button gradient experiment ---------- */
+
+.btn {
+    background-image:
+        linear-gradient(135deg, #1f5fa8, #0b2d55);
+}
