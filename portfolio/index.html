@@ -748,4 +748,38 @@ print("Hello, World!")
 
         const skills = [
             { name: "HTML", value: 0.8 },
-            { name: "Pyt
+            { name: "Python", value: 0.7 },
+            { name: "JavaScript", value: 0.2 },
+            { name: "C++", value: 0.6 }
+        ];
+
+        const barWidth = 40;
+        const gap = 35;
+        const startX = 10;
+        const baseline = 120;
+        const maxHeight = 100;
+
+        skills.forEach((skill, index) => {
+
+            const height = skill.value * maxHeight;
+            const x = startX + index * (barWidth + gap);
+            const y = baseline - height;
+
+            chartCtx.fillStyle = "#1f5fa8";
+            chartCtx.fillRect(x, y, barWidth, height);
+
+            chartCtx.fillStyle = "black";
+            chartCtx.font = "12px Arial";
+            chartCtx.textAlign = "center";
+
+            chartCtx.fillText(
+                skill.name,
+                x + barWidth / 2,
+                140
+            );
+
+        });
+
+    </script>
+
+</body>
